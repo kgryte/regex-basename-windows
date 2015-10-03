@@ -23,7 +23,7 @@ describe( 'regex-basename-windows', function tests() {
 	it( 'should capture Windows path basenames', function test() {
 		var expected,
 			values,
-			ext,
+			base,
 			i;
 
 		values = [
@@ -57,8 +57,8 @@ describe( 'regex-basename-windows', function tests() {
 		];
 
 		for ( i = 0; i < values.length; i++ ) {
-			ext = re.exec( values[ i ] )[ 1 ];
-			assert.strictEqual( ext, expected[ i ], values[ i ] );
+			base = re.exec( values[ i ] )[ 1 ];
+			assert.strictEqual( base, expected[ i ], values[ i ] );
 		}
 	});
 
