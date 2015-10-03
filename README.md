@@ -23,7 +23,7 @@ var re = require( 'regex-basename-windows' );
 [Regular expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) to capture the last part of a Windows path. 
 
 ``` javascript
-var base = re.exec( 'foo/bar/index.js' )[ 1 ];
+var base = re.exec( 'foo\\bar\\index.js' )[ 1 ];
 // returns 'index.js'
 ```
 
